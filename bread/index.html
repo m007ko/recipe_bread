@@ -4,10 +4,6 @@
   <title>Bread from scratch</title>
 </head>
 <body>
-    <title>Yeast Starter Recipe</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
     <h1>Bread from scratch</h1>
 
     <div itemscope itemtype="https://schema.org/Recipe">
@@ -25,9 +21,9 @@
 </ul>
 
     <article>
-        <h1>Part 1 - Yeast Starter Recipe</h1>
+        <h2>Part 1 - Yeast Starter Recipe</h2>
 
-        <h2>Ingredients</h2>
+        <h3>Ingredients</h3>
         <ul>
             <li itemprop="recipeIngredient"> 1 cup of swiss water </li>
             <li itemprop="recipeIngredient">1 cup of flour (better fullcorn)</li>
@@ -53,8 +49,8 @@
     </article>
      
      <article>
-        <h1>Part 2 - Bread</h1>
-        <h2>Ingredients</h2>
+        <h2>Part 2 - Bread</h2>
+        <h3>Ingredients</h3>
         <ul>
             <li itemprop="recipeIngredient"> 400 g of Starter (from Part 1)</li>
             <li itemprop="recipeIngredient">150 g of swiss water</li>
@@ -65,7 +61,7 @@
             <li itemprop="recipeIngredient" >Patience and good mood</li>
         </ul>
         
-        <h2>Equipment</h2>
+        <h3>Equipment</h3>
         <ul>
             <li>Large boul</li>
             <li>Spatula</li>
@@ -74,7 +70,7 @@
             <li>Oven</li>
         </ul>
         
-        <h2>Steps</h2>
+        <h3>Steps</h3>
         <ol>
             <li itemprop="recipeInstructions"> Mix all ingridiens. </li>
             <li itemprop="recipeInstructions">Let the dough rest for 30 minutes at room temperature. </li>
@@ -84,35 +80,38 @@
         </ol>
      </article> 
 
-    <H3> Whoud you like to get more recipes like this? Subscribe! </H3>
+    <h3> Whoud you like to get more recipes like this? Subscribe! </h3>
     <form>
         <fieldset>
             <legend>Personal Details</legend>
-            Greatings:  
+            <label for="greeting"> Greetings: </label> 
             <select>
                 <option> none</option>
                 <option> Mr.</option>
                 <option> Ms.</option> 
             </select>
-            <br />
-           <p>Do you have any dietary restriction? </p>
-            <label>
+            <br>
+            <label for="userName"> Enter your name:</label>
+                <input type = "text" id="userName" value="name" />
+            <br>
+            <label for="email">Enter  email:</label>
+            <input type="email" id="email" pattern="*@*" size="30" required />
+            <br>
+
+           <label for="Diet">Do you have any dietary restriction? </label>
                 <input type = "checkbox" name="Diet" value="Vegan" />Vegan
                 <input type = "checkbox" name="Diet" value="Vegeterian" />Vegeterian
-                <input type = "checkbox" name="Diet" value="Gluten-free" />Gluten-free</label>
-            <br />
-            <label for="email">Enter  email:</label>
-            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
-            <br />
-            <p>Anything you whould like to add/ask?</p>
+                <input type = "checkbox" name="Diet" value="Gluten-free" />Gluten-free
+            <br>
+      
+            <label for="additioninfo"> Anything you whould like to add/ask? </label>
+            <br>
             <textarea rows="5" cols="33">
             Write something here...  
-              </textarea>
-              <br />
+             </textarea> 
+            <br>
             <input type="submit" value=Submit />    
         </fieldset>
-
-    </form>
-        
+    </form> 
 </body> 
 </html>
