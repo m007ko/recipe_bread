@@ -24,7 +24,7 @@
     <li> Cook time: <meta itemprop="cookTime" content="PT1H">2 hour </li>
 </ul>
 
-    <div class="container">
+    <article>
         <h1>Part 1 - Yeast Starter Recipe</h1>
 
         <h2>Ingredients</h2>
@@ -50,11 +50,10 @@
             <li itemprop="recipeInstructions">Repeat step 2 and 3 two times.</li>
             <li itemprop="recipeInstructions">Magic - your own starter is ready! Store it in frige and don't forget to feed every week.</li>
         </ol>
-     </div>
+    </article>
      
-     <div class="container">
+     <article>
         <h1>Part 2 - Bread</h1>
-
         <h2>Ingredients</h2>
         <ul>
             <li itemprop="recipeIngredient"> 400 g of Starter (from Part 1)</li>
@@ -82,32 +81,35 @@
             <li itemprop="recipeInstructions"> Mix again and put all dough in baking form</li>
             <li itemprop="recipeInstructions">Let it rest for 4-6 hours at room temperature OR overnight in frige</li>
            <li itemprop="recipeInstructions"> Bake for 1 hour at 200 ᵒС</li>
-     
         </ol>
-    </div> 
+     </article> 
+
     <H3> Whoud you like to get more recipes like this? Subscribe! </H3>
     <form>
         <fieldset>
             <legend>Personal Details</legend>
-            Salutation
-            <br />
+            Greatings:  
             <select>
                 <option> none</option>
                 <option> Mr.</option>
                 <option> Ms.</option> 
             </select>
+            <br />
            <p>Do you have any dietary restriction? </p>
             <label>
                 <input type = "checkbox" name="Diet" value="Vegan" />Vegan
                 <input type = "checkbox" name="Diet" value="Vegeterian" />Vegeterian
                 <input type = "checkbox" name="Diet" value="Gluten-free" />Gluten-free</label>
-            
-                <br>  
+            <br />
             <label for="email">Enter  email:</label>
             <input type="email" id="email" pattern=".+@example\.com" size="30" required />
-            
-
-           </p> 
+            <br />
+            <p>Anything you whould like to add/ask?</p>
+            <textarea rows="5" cols="33">
+            Write something here...  
+              </textarea>
+              <br />
+            <input type="submit" value=Submit />    
         </fieldset>
 
     </form>
