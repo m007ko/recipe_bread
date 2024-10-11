@@ -2,16 +2,17 @@
 <html>
 <head>
   <title>Bread from scratch</title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
 </head>
 <body>
     <h1>Bread from scratch</h1>
 
-    <div itemscope itemtype="https://schema.org/Recipe">
+    <section id = "summary" itemscope itemtype="https://schema.org/Recipe">
         <span itemprop="name">Bread from scratch</span>
         By <span itemprop="author">Mariia Koliada</span>,
         <meta itemprop="datePublished" content="2024-10-08">Oct 8, 2024
         <img itemprop="image" src="image/bread.jpg"
-             alt="Bread"/> </div>
+             alt="Bread"/> </section>
       
 
 <ul style = "list-style-type: none;">
@@ -23,22 +24,26 @@
     <article>
         <h2>Part 1 - Yeast Starter Recipe</h2>
 
+        <section class = "ingredient">
         <h3>Ingredients</h3>
         <ul>
-            <li itemprop="recipeIngredient"> 1 cup of swiss water </li>
+            <li itemprop="recipeIngredient"> 1 cup of water </li>
             <li itemprop="recipeIngredient">1 cup of flour (better fullcorn)</li>
             <li itemprop="recipeIngredient">Patience and good mood.  </li>
         </ul>
+    </section>
 
-        <h2>Equipment</h2>
+      <section class ="equipment" >
+        <h3>Equipment</h3>
         <ul>
             <li>Large flask or jar (2 liters)</li>
             <li>Spatula</li>
             <li>Peace of clouth</li>
             <li>Measuring cup</li>
         </ul>
+     </section>
         
-        <h2>Steps</h2>
+        <h3>Steps</h3>
         <ol>
             <li itemprop="recipeInstructions"> Mix 1 cup of water with 1 cup of flour</li>
             <li itemprop="recipeInstructions">Let the starter rest for 24 hours at room temperature. </li>
@@ -49,7 +54,9 @@
     </article>
      
      <article>
-        <h2>Part 2 - Bread</h2>
+      <h2>Part 2 - Bread</h2>
+
+       <section class = "ingredient">
         <h3>Ingredients</h3>
         <ul>
             <li itemprop="recipeIngredient"> 400 g of Starter (from Part 1)</li>
@@ -60,7 +67,9 @@
             <li itemprop="recipeIngredient">(optional) malt - add color and taste </li>
             <li itemprop="recipeIngredient" >Patience and good mood</li>
         </ul>
-        
+    </section>
+
+    <section class = "equipment">   
         <h3>Equipment</h3>
         <ul>
             <li>Large boul</li>
@@ -69,6 +78,7 @@
             <li>Measuring cups</li>
             <li>Oven</li>
         </ul>
+    </section>
         
         <h3>Steps</h3>
         <ol>
@@ -80,7 +90,7 @@
         </ol>
      </article> 
 
-    <h3> Whoud you like to get more recipes like this? Subscribe! </h3>
+    <h3 id = "callToAction"> Whoud you like to get more recipes like this? Subscribe! </h3>
     <form>
         <fieldset>
             <legend>Personal Details</legend>
